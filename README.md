@@ -33,6 +33,3 @@ This project implements a Retrieval-Augmented Generation (RAG) system for financ
 ## Notes
 - Make sure Ollama and the Mistral model are installed and running locally.
 - The `venv/` folder is excluded from version control.
-
-## License
-[Add your preferred license here]
