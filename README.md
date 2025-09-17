@@ -4,10 +4,12 @@
 This project implements a Retrieval-Augmented Generation (RAG) system for financial documents. It uses LangChain, Chroma vector store, SentenceTransformers, and Ollama’s Mistral LLM via FastAPI.
 
 ## Project Structure
-- `data/` - Contains PDF financial reports for ingestion.
+- `data/` - Stores ingested content (now populated via web scraping).
+- `src/` - Contains the main application scripts:
+    - `ingest.py` - Script to extract text, create embeddings, and build vector store.
+    - `main.py` - FastAPI app serving a query endpoint using RAG.
+    - `utils.py` - Helper functions used by `ingest.py` and/or `main.py`.
 - `venv/` - Python virtual environment (excluded from Git).
-- `ingest.py` - Script to extract text, create embeddings, and build vector store.
-- `main.py` - FastAPI app serving a query endpoint using RAG.
 - `requirements.txt` - Python dependencies to install.
 
 ## Setup Instructions
