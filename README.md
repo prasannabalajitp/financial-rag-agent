@@ -21,9 +21,9 @@ This project implements a Retrieval-Augmented Generation (RAG) system for financ
    pip install -r requirements.txt
 4. Place PDF documents in the `data/` folder.
 5. Run ingestion script to build vector store:
-   python ingest.py
+   python src/ingest.py
 6. Run FastAPI server:
-   uvicorn main:app --reload
+   uvicorn src/main:app --reload
 
 ## Usage
 - Send POST requests to `/query` with JSON body:
